@@ -17015,7 +17015,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /********* General CSS *********/
 /*******************************/
 body {
-  color: #797979;
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -17233,11 +17232,35 @@ h2 {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-  position: relative;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  position: fixed;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   z-index: 999;
+  width: 100%;
+}
+
+.navbar .btn {
+  color: #EF233C;
+  background: #ffffff;
+  -webkit-box-shadow: inset 0 0 0 50px #ffffff;
+          box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.navbar .btn:hover {
+  color: #ffffff;
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 0 0 #ffffff;
+          box-shadow: inset 0 0 0 0 #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar .logo2 {
+  display: none;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
 .navbar.nav-sticky {
@@ -17248,15 +17271,48 @@ h2 {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.navbar.nav-sticky .btn {
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #EF233C;
+  border: 2px solid transparent;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 0 50px #EF233C;
+          box-shadow: inset 0 0 0 50px #EF233C;
+  -o-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+}
+
+.navbar.nav-sticky .btn:hover {
+  color: #EF233C;
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 0 0 #EF233C;
+          box-shadow: inset 0 0 0 0 #EF233C;
+  border-color: #EF233C;
+}
+
+.navbar.nav-sticky .logo {
+  display: none;
+}
+
+.navbar.nav-sticky .logo2 {
+  display: block;
+}
+
 .navbar .navbar-brand {
   margin: 0;
   font-size: 45px;
   line-height: 0px;
   font-weight: 700;
   letter-spacing: 2px;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar .navbar-brand img {
@@ -17272,11 +17328,9 @@ h2 {
 
 @media (min-width: 992px) {
   .navbar {
-    position: absolute;
     width: 100%;
     padding: 30px 60px;
     background: transparent !important;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
     z-index: 9;
   }
   .navbar.nav-sticky {
@@ -17315,6 +17369,13 @@ h2 {
     padding: 15px;
     background: #ffffff !important;
   }
+  .navbar img.logo2 {
+    display: block;
+    max-width: 70%;
+  }
+  .navbar .logo {
+    display: none;
+  }
   .navbar .navbar-brand {
     color: #EF233C;
   }
@@ -17330,6 +17391,12 @@ h2 {
   }
 }
 
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+}
+
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
@@ -17337,7 +17404,7 @@ h2 {
   position: relative;
   width: 100%;
   margin-bottom: 45px;
-  padding: 120px 0 0 0;
+  padding: 130px 0 0 0;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 35, 60, 0.95)), to(rgba(239, 35, 60, 0.95))), url(../img/hero-bg.jpg);
   background: -o-linear-gradient(rgba(239, 35, 60, 0.95), rgba(239, 35, 60, 0.95)), url(../img/hero-bg.jpg);
@@ -17347,24 +17414,17 @@ h2 {
   background-size: cover;
 }
 
-.hero .container-fluid {
-  padding: 0;
-}
-
 .hero .hero-image {
   position: relative;
   text-align: right;
-  padding-right: 75px;
 }
 
 .hero .hero-image img {
-  max-width: 80%;
-  max-height: 80%;
+  width: 100%;
 }
 
 .hero .hero-content {
   position: relative;
-  padding-left: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17435,7 +17495,7 @@ h2 {
 
 @media (max-width: 991.98px) {
   .hero {
-    padding-top: 60px;
+    padding-top: 140px;
   }
   .hero .hero-content {
     padding: 0 15px;
@@ -17458,7 +17518,7 @@ h2 {
 
 @media (max-width: 767.98px) {
   .hero {
-    padding-top: 60px;
+    padding-top: 140px;
     padding-bottom: 60px;
   }
   .hero,
@@ -17671,55 +17731,75 @@ h2 {
   width: 100%;
   margin: 45px 0;
   padding: 90px 0;
-  background: #EF233C;
+  background: #fff;
+  color: #EF233C;
 }
 
-.banner .container {
-  max-width: 750px;
+.banner img {
+  width: 100%;
+}
+
+.composition {
+  padding: 40px 0;
+}
+
+.composition__list {
+  padding-top: 200px;
+  position: relative;
+}
+
+.composition__list .composition__item {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
-.banner .section-header {
-  margin-bottom: 20px;
-}
-
-.banner .section-header p {
-  color: #414141;
-  background: transparent;
-}
-
-.banner .section-header p::after {
-  display: none;
-}
-
-.banner .section-header h2 {
-  color: #ffffff;
-}
-
-.banner .section-header h2 span {
-  color: #414141;
-  font-size: 50px;
-}
-
-.banner .banner-text p {
-  font-size: 18px;
-  color: #ffffff;
-}
-
-.banner .banner-text .btn {
-  margin-top: 15px;
+.composition__list .composition__item span {
   color: #EF233C;
-  background: #ffffff;
-  -webkit-box-shadow: inset 0 0 0 50px #ffffff;
-          box-shadow: inset 0 0 0 50px #ffffff;
 }
 
-.banner .banner-text .btn:hover {
-  color: #ffffff;
-  background: transparent;
-  -webkit-box-shadow: inset 0 0 0 0 #ffffff;
-          box-shadow: inset 0 0 0 0 #ffffff;
-  border-color: #ffffff;
+.composition__list .composition__item1 {
+  top: 20%;
+  left: 10%;
+}
+
+.composition__list .composition__item2 {
+  top: 40%;
+  left: 5%;
+}
+
+.composition__list .composition__item3 {
+  bottom: 0;
+  left: 0;
+}
+
+.composition__list .composition__item4 {
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.composition__list .composition__item5 {
+  top: 20%;
+  right: 10%;
+}
+
+.composition__list .composition__item6 {
+  top: 40%;
+  right: 5%;
+}
+
+.composition__list .composition__item7 {
+  bottom: 0;
+  right: 0;
 }
 
 .testimonial {
