@@ -56,7 +56,7 @@
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #EF233C;
+        color: $primaryColor;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -79,7 +79,7 @@
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #EF233C;
+        color: $primaryColor;
     }
 }
 
@@ -90,7 +90,7 @@
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: $primaryColor;
     }
     
     .navbar .navbar-nav {
