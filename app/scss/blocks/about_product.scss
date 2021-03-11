@@ -9,10 +9,15 @@
 .experience .timeline {
     position: relative;
     width: 100%;
+    .bold-text {
+        font-size: 18px;
+        font-weight: bold;
+        color: $primaryColor;
+    }
 }
 
 .experience .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 2px;
     background: $primaryColor;
@@ -40,7 +45,7 @@
 }
 
 .experience .timeline .timeline-item::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 16px;
     height: 16px;
@@ -57,20 +62,20 @@
 }
 
 .experience .timeline .timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 46px;
-  right: 10px;
-  z-index: 1;
-  border: 10px solid;
-  border-color: transparent transparent transparent #dddddd;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 46px;
+    right: 10px;
+    z-index: 1;
+    border: 10px solid;
+    border-color: transparent transparent transparent #dddddd;
 }
 
 .experience .timeline .timeline-item.right::before {
-  left: 10px;
-  border-color: transparent #dddddd transparent transparent;
+    left: 10px;
+    border-color: transparent #dddddd transparent transparent;
 }
 
 .experience .timeline .timeline-date {
@@ -100,7 +105,7 @@
     background: #ffffff;
     position: relative;
     border-right: 5px solid #dddddd;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
 }
 
 .experience .timeline .timeline-item.right .timeline-text {
@@ -135,27 +140,27 @@
         width: 100%;
         padding-left: 38px;
     }
-    
+
     .experience .timeline .timeline-item.left {
         padding-right: 0;
     }
-    
+
     .experience .timeline .timeline-item.right {
         left: 0%;
         padding-left: 38px;
     }
 
-    .experience .timeline .timeline-item.left::after, 
+    .experience .timeline .timeline-item.left::after,
     .experience .timeline .timeline-item.right::after {
         left: 0;
     }
-    
+
     .experience .timeline .timeline-item.left::before,
     .experience .timeline .timeline-item.right::before {
         left: 18px;
         border-color: transparent #dddddd transparent transparent;
     }
-    
+
     .experience .timeline .timeline-item.left .timeline-date,
     .experience .timeline .timeline-item.right .timeline-date {
         position: relative;
@@ -165,16 +170,13 @@
         text-align: left;
         margin-bottom: 10px;
     }
-    
+
     .experience .timeline .timeline-item.left .timeline-text,
     .experience .timeline .timeline-item.right .timeline-text {
         border-right: none;
         border-left: 5px solid #dddddd;
     }
 }
-
-
-
 
 // /*******************************/
 // /********* Banner CSS **********/
@@ -184,58 +186,45 @@
     width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #fff;
-    color: $primaryColor;
-    img{
+    background: $primaryColor;
+    color: #fff;
+    img {
         width: 100%;
     }
 }
 
-
-//composition
-.composition{
-    padding: 40px 0;
+.useful__list {
+    li {
+        margin-bottom: 5px;
+    }
+    svg {
+        width: 20px;
+    }
+    .plus-icon {
+        width: 20px;
+    }
 }
-.composition__list{
-    padding-top: 200px;
-    position: relative;
-    .composition__item{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        span{
-            color: $primaryColor;
-        }
+
+h4.about-heading {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+    span {
+        color: $primaryColor;
     }
-    .composition__item1{
-        top: 20%;
-        left: 10%;
+}
+
+.buy-section {
+    background-image: url(../img/buy-bg.png);
+    background-color: $primaryColor;
+    background-position: center;
+    padding-top: 120px;
+}
+
+.contact {
+    margin-top: 100px;
+    padding-top: 100px;
+    h2 {
+        color: #fff;
     }
-    .composition__item2{
-        top: 40%;
-        left: 5%;
-    }
-    .composition__item3{
-        bottom: 0;
-        left: 0;
-    }
-    .composition__item4{
-        top: 0%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }
-    .composition__item5{
-        top: 20%;
-        right: 10%;
-    }
-    .composition__item6{
-        top: 40%;
-        right: 5%;
-    }
-    .composition__item7{
-        bottom: 0;
-        right: 0;
-    }
-    
 }
