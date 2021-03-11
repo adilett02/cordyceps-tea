@@ -1,88 +1,134 @@
 // /*******************************/
 // /******* Testimonial CSS *******/
 // /*******************************/
-.testimonial {
+// .testimonial {
+//     position: relative;
+//     margin: 45px 0;
+//     padding: 90px 0;
+//     background: $primaryColor;
+// }
+
+// .testimonial .container {
+//     max-width: 900px;
+// }
+
+// .testimonial .testimonial-icon {
+//     margin-bottom: 45px;
+//     text-align: center;
+// }
+
+// .testimonial .testimonial-icon i {
+//     font-size: 60px;
+//     color: rgba(256, 256, 256, .5);
+// }
+
+// .testimonial .testimonial-item {
+//     position: relative;
+//     margin: 0 15px;
+//     text-align: center;
+// }
+
+// .testimonial .testimonial-img {
+//     position: relative;
+//     margin-bottom: 15px;
+//     z-index: 1;
+// }
+
+// .testimonial .testimonial-item img {
+//     margin: 0 auto;
+//     width: 120px;
+//     padding: 10px;
+//     border: 5px dotted #ffffff;
+//     border-radius: 100px;
+// }
+
+// .testimonial .testimonial-text {
+//     position: relative;
+//     margin-top: -70px;
+//     padding: 65px 35px 30px 35px;
+//     text-align: center;
+//     background: #ffffff;
+//     border-radius: 500px;
+// }
+
+// .testimonial .testimonial-item p {
+//     font-size: 18px;
+//     font-style: italic;
+// }
+
+// .testimonial .testimonial-text h3 {
+//     color: $primaryColor;
+//     font-size: 18px;
+//     font-weight: 600;
+//     margin-bottom: 10px;
+// }
+
+// .testimonial .testimonial-text h4 {
+//     color: #666666;
+//     font-size: 14px;
+//     margin-bottom: 0;
+// }
+
+// .testimonial .owl-dots {
+//     margin-top: 15px;
+//     text-align: center;
+// }
+
+// .testimonial .owl-dot {
+//     display: inline-block;
+//     margin: 0 5px;
+//     width: 12px;
+//     height: 12px;
+//     border-radius: 50%;
+//     background: rgba(256, 256, 256, .5);
+// }
+
+// .testimonial .owl-dot.active {
+//     background: #ffffff;
+// }
+
+
+
+.testimonial{
+    background-attachment: fixed;
+    background-image: url(../../img/tea2-2.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: $primaryColor;
+    padding: 120px 0;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(14,14,14,.7);
+        top: 0;
+        left: 0;
+    }
+    .section-header p{
+        background-color: transparent;
+        color: #fff;
+    }
 }
-
-.testimonial .container {
-    max-width: 900px;
-}
-
-.testimonial .testimonial-icon {
-    margin-bottom: 45px;
+.testimonial-item{
     text-align: center;
 }
-
-.testimonial .testimonial-icon i {
-    font-size: 60px;
-    color: rgba(256, 256, 256, .5);
-}
-
-.testimonial .testimonial-item {
-    position: relative;
-    margin: 0 15px;
-    text-align: center;
-}
-
-.testimonial .testimonial-img {
-    position: relative;
-    margin-bottom: 15px;
-    z-index: 1;
-}
-
-.testimonial .testimonial-item img {
+.testimonial-img{
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
-    width: 120px;
-    padding: 10px;
-    border: 5px dotted #ffffff;
-    border-radius: 100px;
+    img{
+        width: 100%;
+    }
 }
-
-.testimonial .testimonial-text {
-    position: relative;
-    margin-top: -70px;
-    padding: 65px 35px 30px 35px;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 500px;
-}
-
-.testimonial .testimonial-item p {
-    font-size: 18px;
-    font-style: italic;
-}
-
-.testimonial .testimonial-text h3 {
-    color: $primaryColor;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.testimonial .testimonial-text h4 {
-    color: #666666;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.testimonial .owl-dots {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.testimonial .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(256, 256, 256, .5);
-}
-
-.testimonial .owl-dot.active {
-    background: #ffffff;
+.testimonial-text{
+    h3{
+        color: #fff;
+    }
+    h4{
+        color: $primaryColor;
+    }
+    p{
+        color: #fff;
+    }
 }

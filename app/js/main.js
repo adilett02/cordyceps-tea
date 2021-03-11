@@ -71,16 +71,22 @@
 
 
     // Testimonials carousel
+    // $(".testimonials-carousel").owlCarousel({
+    //     center: true,
+    //     autoplay: true,
+    //     autoHeight: true,
+    //     dots: true,
+    //     loop: true,
+    //     responsive: {
+    //         0:{
+    //             items:1
+    //         }
+    //     }
+    // });
     $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
-            }
-        }
+        singleItem: true,
+        responsiveRefreshRate: 0,
+        autoHeight: true
     });
     
     

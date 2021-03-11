@@ -219,6 +219,35 @@ h4.about-heading {
     background-color: $primaryColor;
     background-position: center;
     padding-top: 120px;
+    h4.about-heading {
+        color: #414141;
+        span {
+            color: #fff;
+        }
+    }
+    .buy-text {
+        color: #fff;
+    }
+    .btn2 {
+        padding: 12px 25px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: $primaryColor;
+        background: #fff;
+        border: 2px solid transparent;
+        border-radius: 0;
+        box-shadow: inset 0 0 0 50px #fff;
+        -o-transition: ease-out 0.3s;
+        transition: ease-out 0.3s;
+        font-weight: bold;
+        &:hover {
+            color: #fff;
+            background: transparent;
+            box-shadow: inset 0 0 0 0 #fff;
+            border-color: #fff;
+        }
+    }
 }
 
 .contact {
