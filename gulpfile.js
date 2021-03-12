@@ -26,7 +26,7 @@ function browsersync() {
 
 function styles() {
     return src('app/scss/style.scss')
-    .pipe(scss({outputStyle: 'expanded'}))
+    .pipe(scss({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 version'],
         grid: true
@@ -43,7 +43,6 @@ function jsLibs(cb) {
       'node_modules/jquery-easing/dist/jquery.easing.1.3.umd.min.js',
       'node_modules/wow.js/dist/wow.min.js',
       'node_modules/owlcarousel/owl-carousel/owl.carousel.min.js'
-    //   'node_modules/typed.js/src/typed.js',
     ];
   
     if (!libs.length) return cb();
