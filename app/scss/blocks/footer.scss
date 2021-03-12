@@ -33,3 +33,9 @@
       }
     }
   }
+
+  @media (max-width: 576px) {
+      .social__list{
+          justify-content: center;
+      }
+  }

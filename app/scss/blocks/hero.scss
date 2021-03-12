@@ -3,32 +3,11 @@
 /********** Hero CSS ***********/
 /*******************************/
 .hero {
-    position: relative;
-    width: 100%;
-    padding: 130px 0 0 0;
+    padding: 130px 0 40px 0;
     overflow: hidden;
     background-color: $primaryColor;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.hero .hero-image {
-    position: relative;
-    text-align: right;
-}
-
-.hero .hero-image img {
-    width: 100%;
-}
-
-.hero .hero-content {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .hero .hero-text p {
     color: #ffffff;
@@ -38,7 +17,7 @@
 }
 
 .hero .hero-text h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 15px;
@@ -51,16 +30,6 @@
     color: #ffffff;
     font-size: 35px;
     font-weight: 600;
-}
-
-.hero .hero-text .typed-text {
-    display: none;
-}
-
-.hero .hero-text .typed-cursor {
-    font-size: 35px;
-    font-weight: 300;
-    color: #ffffff;
 }
 
 .hero .hero-btn .btn {
@@ -112,7 +81,10 @@
 @media (max-width: 767.98px) {
     .hero {
         padding-top: 140px;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
+    }
+    .hero-image{
+        padding-top: 40px;
     }
     
     .hero,

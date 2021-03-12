@@ -2,9 +2,15 @@
 // /********* Contact CSS *********/
 // /*******************************/
 .contact {
+    margin-top: 100px;
+    padding-top: 100px;
     position: relative;
     width: 100%;
     background: $primaryColor;
+    h2 {
+        color: #fff;
+    }
+    
 }
 
 .contact .contact-form {

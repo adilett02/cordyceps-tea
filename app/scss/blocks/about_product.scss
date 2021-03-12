@@ -1,7 +1,9 @@
 .about-product{
     padding-top: 100px;
 }
-
+.about{
+    padding: 20px 0;
+}
 // /*******************************/
 // /******* Experience CSS ********/
 // /*******************************/
@@ -188,7 +190,7 @@
 .banner {
     position: relative;
     width: 100%;
-    padding: 90px 0;
+    padding: 90px 15px;
     background: $primaryColor;
     color: #fff;
     img {
@@ -252,11 +254,21 @@ h4.about-heading {
         }
     }
 }
-
-.contact {
-    margin-top: 100px;
-    padding-top: 100px;
-    h2 {
-        color: #fff;
+@media (max-width: 992px) {
+    .buy-section{
+        padding-bottom: 50px;
     }
 }
+@media (max-width: 576px) {
+    .buy-section{
+        padding-top: 50px;
+    }
+    h4.about-heading{
+        font-size: 26px;
+    }
+    h5{
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
+
