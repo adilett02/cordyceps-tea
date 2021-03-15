@@ -85,7 +85,7 @@ h2{
     display: none;
     width: 44px;
     height: 44px;
-    padding: 8px 0;
+    padding: 9px;
     text-align: center;
     line-height: 1;
     font-size: 22px;
@@ -93,13 +93,13 @@ h2{
     bottom: 15px;
     z-index: 9;
 }
-
-.back-to-top i {
-    color: #ffffff;
+.back-to-top svg{
+    fill: #fff;
+    width: 100%;
 }
 
-.back-to-top:hover i {
-    color: #414141;
+.back-to-top:hover svg {
+    fill: #414141;
 }
 
 
