@@ -1,6 +1,15 @@
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
+.navbar-brand{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    svg{
+        width: 100%;
+        height: 100%;
+    }
+}
 .navbar {
     position: fixed;
     transition: 0.5s;
@@ -17,8 +26,11 @@
             border-color: #ffffff;
         }
     }
-    .logo2 {
-        display: none;
+    .navbar-brand{
+        svg{
+            fill: #fff;
+            width: 100%;
+        }
     }
 }
 .navbar-light .navbar-toggler {
@@ -50,20 +62,15 @@
             border-color: $primaryColor;
         }
     }
-    .logo {
-        display: none;
-    }
-    .logo2 {
-        display: block;
+    .navbar-brand{
+        svg{
+            fill: $primaryColor;
+        }
     }
 }
 
 .navbar .navbar-brand {
     transition: 0.5s;
-}
-
-.navbar .navbar-brand img {
-    width: 100%;
 }
 
 .navbar .dropdown-menu {
@@ -82,10 +89,6 @@
     .navbar.nav-sticky {
         padding: 10px 0px;
         background: #ffffff !important;
-    }
-
-    .navbar .navbar-brand {
-        color: #ffffff;
     }
 
     .navbar.nav-sticky .navbar-brand {
@@ -120,13 +123,6 @@
     .navbar {
         padding: 15px;
         background: #ffffff !important;
-        img.logo2 {
-            display: block;
-            max-width: 70%;
-        }
-        .logo {
-            display: none;
-        }
         .btn {
             padding: 12px 25px;
             font-size: 14px;
@@ -151,6 +147,13 @@
 
     .navbar .navbar-nav {
         margin-top: 15px;
+    }
+    .navbar .navbar-brand{
+        width: 60px;
+        height: 60px;
+        svg{
+            fill: $primaryColor;
+        }
     }
 
     .navbar .navbar-nav a.nav-link {
