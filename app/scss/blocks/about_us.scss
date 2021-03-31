@@ -5,18 +5,6 @@
     width: 100%;
   }
 }
-.juncao__start {
-  background-color: $primaryColor;
-  &-text {
-    padding: 80px 30px;
-    //   font-family: $font2;
-    text-align: center;
-    color: white;
-  }
-}
-.juncao__end {
-  padding-bottom: 25px;
-}
 
 .problem__decision-section {
   background: linear-gradient(to right, #414141 50%, $primaryColor 50%);
