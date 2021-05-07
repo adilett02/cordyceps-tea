@@ -10,7 +10,6 @@
     h2 {
         color: #fff;
     }
-    
 }
 
 .contact .contact-form {
@@ -21,11 +20,11 @@
 
 .contact .contact-form input {
     color: #ffffff;
-    padding: 15px 0;
+    padding: 25px 0;
     background: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
 .contact .contact-form textarea {
@@ -35,7 +34,7 @@
     background: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
+    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
 .contact .contact-form .form-control::placeholder {
@@ -75,7 +74,7 @@
     .contact .container-fluid {
         background: none;
     }
-    
+
     .contact .contact-form {
         padding: 90px 0;
     }

@@ -1,7 +1,7 @@
-.about-product{
+.about-product {
     padding-top: 100px;
 }
-.about{
+.about {
     padding: 20px 0;
 }
 // /*******************************/
@@ -234,6 +234,7 @@ h4.about-heading {
         color: #fff;
     }
     .btn2 {
+        display: inline-flex;
         padding: 12px 25px;
         font-size: 14px;
         font-weight: 600;
@@ -255,20 +256,19 @@ h4.about-heading {
     }
 }
 @media (max-width: 992px) {
-    .buy-section{
+    .buy-section {
         padding-bottom: 50px;
     }
 }
 @media (max-width: 576px) {
-    .buy-section{
+    .buy-section {
         padding-top: 50px;
     }
-    h4.about-heading{
+    h4.about-heading {
         font-size: 26px;
     }
-    h5{
+    h5 {
         font-size: 18px;
         font-weight: normal;
     }
 }
-

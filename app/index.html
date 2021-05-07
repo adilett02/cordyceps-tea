@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kordiceps-tea</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -466,7 +467,7 @@
                 Начни сегодня пить <span>красный чай с Кордицепсом,</span> и получай с каждой
                 выпитой чашкой мощный иммунитет и крепкое здоровье.
               </h5>
-              <button class="btn2 mt-3">Хочу купить!</button>
+              <a href="#" class="btn2 mt-3">Хочу купить!</a>
             </div>
             <div class="col-lg-6 wow animate__bounceInUp">
               <picture>
@@ -666,50 +667,18 @@
           </div>
           <div class="col-md-8">
             <div class="contact-form">
-              <div id="success"></div>
               <form name="sentMessage" id="contactForm" novalidate="novalidate">
                 <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Ваше имя"
-                    required="required"
-                    data-validation-required-message="Please enter your name"
-                  />
-                  <p class="help-block"></p>
+                  <input class="form-control" type="text" placeholder="Ваше имя" />
                 </div>
                 <div class="control-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Ваш email"
-                    required="required"
-                    data-validation-required-message="Please enter your email"
-                  />
-                  <p class="help-block"></p>
+                  <input class="form-control" type="email" name="email" placeholder="Ваш email" />
                 </div>
                 <div class="control-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    placeholder="Номер телефона"
-                    required="required"
-                    data-validation-required-message="Please enter a subject"
-                  />
-                  <p class="help-block"></p>
+                  <input class="form-control" type="tel" placeholder="Номер телефона" name="tel" />
                 </div>
                 <div class="control-group">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    placeholder="Сообщение"
-                    required="required"
-                    data-validation-required-message="Please enter your message"
-                  ></textarea>
-                  <p class="help-block"></p>
+                  <textarea class="form-control" placeholder="Сообщение"></textarea>
                 </div>
                 <div>
                   <button class="btn" type="submit" id="sendMessageButton">Отправить</button>
@@ -732,6 +701,12 @@
             </div>
           </div>
           <div class="col-sm-6">
+            <div class="antioxidat mb-3 text-center text-sm-right">
+              <strong>
+                <span class="positive-text">Природный антиоксидант.</span>
+                <span class="negative-text">Не является лекарством.</span>
+              </strong>
+            </div>
             <ul class="social__list">
               <li class="social__list-item">
                 <a class="btn" href="#">
